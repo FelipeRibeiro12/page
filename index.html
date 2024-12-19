@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+        }
+
+        .container {
+            width: 375px; /* largura do iPhone 12 */
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .header {
+            color: #ff99cc;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .headerr {
+            background-color: #ff99cc;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .timeline {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .svg-path {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .eventf {
+            margin: 60px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 70%;
+            text-align: center;
+        }
+
+        .event {
+            position: relative;
+            margin: 60px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 70%;
+        }
+
+        .event h3 {
+            color: #ff66a3;
+            margin: 0 0 10px;
+        }
+
+        .event:nth-child(odd) {
+            margin-left: 35%;
+            transform: rotate(-3deg);
+        }
+
+        .event:nth-child(even) {
+            margin-right: 35%;
+            transform: rotate(3deg);
+        }
+
+        .event::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: #ff66a3;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .event:nth-child(odd)::before {
+            left: -15px;
+        }
+
+        .event:nth-child(even)::before {
+            right: -15px;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .button a {
+            text-decoration: none;
+            background-color: #ff99cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .button a:hover {
+            background-color: #ff66a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Felipe & Maria</h1>
+        </div>
+
+        <div class="headerr">
+            <h3>Amor, todos nossos momentos são muito mais que especias para mim, mas precisei separar apenas alguns como resumo de nosso caminho até agora, </h3>
+        </div>
+
+        <div class="timeline">
+            <svg class="svg-path" width="375" height="2400" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 187.5,20 
+                          Q 375,100 187.5,180 
+                          T 250,260 
+                          Q 325,340 187.5,420 
+                          T 150,500 
+                          Q 5,580 187.5,660
+                          T 200,740
+                          Q 455,820 57.5,950
+                          T 250,980
+                          Q 105,1060 77.5,1140
+                          T 250,1220"
+                      stroke="#ff66a3" 
+                      stroke-width="4" 
+                      fill="none" 
+                      stroke-dasharray="8,8"/>
+            </svg>
+            
+
+            <div class="event">
+                <h3>01/09</h3>
+                <b>A primeira mensagem</b>
+                <p>Alguém esqueceu de me responder, né?! 😂</p>
+            </div>
+
+            <div class="event">
+                <h3>29/09</h3>
+                <b>O primeiro beijo</b>
+                <p>Me apaixonei naquele momento 💕</p>
+            </div>
+
+            <div class="event">
+                <h3>05/10</h3>
+                <b>O primeiro date</b>
+                <p>Não sabe o quanto eu estava nervoso kkk</p>
+            </div>
+
+            <div class="event">
+                <h3>11/10</h3>
+                <b>Descobri que já te amava</b>
+                <p>Tive certeza que era com você que queria construir o futuro</p>
+            </div>
+
+            <div class="event">
+                <h3>26/10</h3>
+                <b>Primeira vez que me viu chorar</b>
+                <p>Caiu um cisco no meu olho enquanto falava de quanto você é importante pra mim</p>
+            </div>
+
+            <div class="event">
+                <h3>26/10</h3>
+                <b>Nossa primeira vez</b>
+                <p>Provei a cereja do bolo haha</p>
+            </div>
+
+            <div class="event">
+                <h3>26/10</h3>
+                <p>Primeira vez que te dei flores (rosas rosas )</p>
+            </div>
+
+            <div class="event">
+                <h3>14/12</h3>
+                <b>A primeira viagem juntos</b>
+                <p>Aproveitamos demais aquele chalé haha</p>
+            </div>
+
+            <div class="event">
+                <h3>ထ</h3>
+                <b>Até que a morte nos separe</b>
+                <p>Pra sempre a gente </p>
+
+        </div>
+
+        <div class="button">
+            <a href="#">Quer namorar comigo? 💍</a>
+        </div>
+    </div>
+</body>
+</html>
