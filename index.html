@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedido de Namoro</title>
+    <title>Felipe&Maria.page</title>
     <style>
         body {
+            width: 100%;
+            max-width: 375px; /* largura do iPhone 12 */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #ffe6f2;
             color: #333;
+            text-align: center;
         }
 
         .container {
-            width: 375px; /* largura do iPhone 12 */
+            width: 100%; /* largura do iPhone 12 */
             margin: 0 auto;
             padding: 20px;
             position: relative;
+            box-sizing: border-box;
+            text-align: center;
         }
 
         .header {
+            width: 100%;
             color: #ff99cc;
             padding: 20px;
             border-radius: 15px;
@@ -32,12 +38,14 @@
             color: white;
             padding: 20px;
             border-radius: 15px;
-            text-align: center;
+            margin-left: 18px;
         }
 
         .timeline {
             margin-top: 20px;
+            width: 100%;
             position: relative;
+            text-align: center;
         }
 
         .svg-path {
@@ -66,6 +74,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 70%;
+            text-align: center;
         }
 
         .event h3 {
@@ -74,12 +83,12 @@
         }
 
         .event:nth-child(odd) {
-            margin-left: 35%;
+            margin-left: 24%;
             transform: rotate(-3deg);
         }
 
         .event:nth-child(even) {
-            margin-right: 35%;
+            margin-right: 0;
             transform: rotate(3deg);
         }
 
@@ -120,6 +129,11 @@
 
         .button a:hover {
             background-color: #ff66a3;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #ff99cc;
         }
     </style>
 </head>
@@ -210,6 +224,10 @@
         <div class="button">
             <a href="#">Quer namorar comigo? 💍</a>
         </div>
+
+        <div class="footer">
+            <p>Feito com ❤️ por Felipe</p>
     </div>
+
 </body>
 </html>
